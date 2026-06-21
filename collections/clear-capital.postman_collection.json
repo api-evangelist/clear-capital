@@ -1,0 +1,62 @@
+{
+  "item": [
+    {
+      "name": "ClearAVM / Valuation",
+      "description": {
+        "content": "Lending-grade ClearAVM and Rental AVM automated valuations via the Property Analytics API. Endpoint paths are documented in Clear Capital's gated developer portal and are not reproduced here.",
+        "type": "text/plain"
+      },
+      "item": []
+    },
+    {
+      "name": "Property Data",
+      "description": {
+        "content": "Property characteristics, market trends, and sales/listing/owner/tax history via the Property Analytics API. Endpoint paths are documented in Clear Capital's gated developer portal and are not reproduced here.",
+        "type": "text/plain"
+      },
+      "item": []
+    },
+    {
+      "name": "Comparables",
+      "description": {
+        "content": "Comparable sales and rentals ranked by ClearRank via the Property Analytics API. Endpoint paths are documented in Clear Capital's gated developer portal and are not reproduced here.",
+        "type": "text/plain"
+      },
+      "item": []
+    },
+    {
+      "name": "Appraisal & Orders",
+      "description": {
+        "content": "Ordering and fulfillment of Hybrid/Desktop appraisal, BPO, CDA, and UDC via the Property Valuation API. Endpoint paths are documented in Clear Capital's gated developer portal and are not reproduced here.",
+        "type": "text/plain"
+      },
+      "item": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.clearcapital.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "c1ea5c4d-0b2a-4f6e-9d3a-7f1e2a9c4b80",
+    "name": "Clear Capital API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Clear Capital valuation and property data REST APIs (Property Analytics API and Property Valuation API). Access is sales-led and gated; exact endpoint paths and schemas live in the developer portal at docs.api.clearcapital.com and are not reproduced here to avoid fabrication. Folders represent documented product areas.\n\nContact: https://www.clearcapital.com/contact/",
+      "type": "text/plain"
+    }
+  }
+}

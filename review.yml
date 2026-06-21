@@ -1,0 +1,69 @@
+aid: clear-capital
+name: Clear Capital
+review:
+  question: Does Clear Capital expose a publicly documented, self-service developer API?
+  answer: false
+  date: '2026-06-21'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Clear Capital operates a real REST API surface, but it is sales-led and
+    gated, not publicly self-service. Two products are documented on
+    clearcapital.com: the Property Analytics API (ClearAVM and Rental AVM
+    automated valuations, comparables ranked by ClearRank, property
+    characteristics, market trends, and sales/listing/owner/tax history) and the
+    Property Valuation API (ordering and fulfillment of Hybrid Appraisal,
+    Desktop Appraisal, Broker Price Opinion, Collateral Desktop Analysis, and
+    Universal Data Collection). Both are described as well-documented RESTful
+    APIs using encrypted transport and system-to-system authentication and
+    authorization.
+
+    A developer portal exists at docs.api.clearcapital.com (which 301-redirects
+    to api.clearcapital.com and serves an /introduction page). At review time
+    that portal is a client-side-rendered documentation application that returns
+    only a page title to anonymous, unauthenticated HTTP fetchers - no endpoint
+    paths, request/response schemas, base path details, or token-issuance flow
+    could be extracted without an account or JavaScript rendering. Onboarding is
+    gated behind a commercial agreement (contact sales@clearcapital.com or
+    530-550-2500); pricing is not published.
+
+    Accordingly, no public endpoint paths or schemas have been reproduced in
+    this repo. The OpenAPI document records the verified production base host
+    (https://api.clearcapital.com), the four product areas as tags, and a
+    bearer-style security scheme reflecting the documented system-to-system auth,
+    with paths intentionally left empty to avoid fabrication.
+  apiAvailability: gated-sales-led
+  transports:
+    - protocol: REST
+      scheme: https
+      baseURL: https://api.clearcapital.com
+      documented: true
+      note: Base host confirmed; specific endpoint paths are behind the gated portal.
+  authentication:
+    style: system-to-system (bearer-style) over encrypted transport
+    documented: partial
+    note: Auth pattern is described on product pages; exact token issuance/headers are in the gated portal only.
+  productsConfirmed:
+    - Property Analytics API (ClearAVM, Rental AVM, Comparables/ClearRank, Property Data, market trends)
+    - Property Valuation API (Hybrid Appraisal, Desktop Appraisal, BPO, CDA, UDC ordering + milestone event notifications)
+  endpointsConfirmedRest: []
+sources:
+  - url: https://www.clearcapital.com/products/property-analytics-api/
+    type: Documentation
+    note: Describes Property Analytics API - ClearAVM, Rental AVM, ClearRank comparables, property data; sales-led access.
+  - url: https://www.clearcapital.com/products/property-valuation-api/
+    type: Documentation
+    note: Describes Property Valuation API - Hybrid/Desktop appraisal, BPO, CDA, UDC ordering; RESTful, system-to-system auth, milestone notifications.
+  - url: https://www.clearcapital.com/analytics/clear-avm/
+    type: Documentation
+    note: ClearAVM and Interactive ClearAVM product detail.
+  - url: https://docs.api.clearcapital.com/introduction
+    type: APIReference
+    note: Developer portal; 301-redirects to api.clearcapital.com and serves a client-side-rendered app returning only a title to anonymous fetchers.
+actions:
+  apisYmlUpdated: true
+  reason: |
+    Reconciled flags are set false on plans, rate-limits, and finops because no
+    public pricing, rate limits, or rate card exists. OpenAPI paths left empty
+    because no endpoint paths/schemas are publicly verifiable; no values were
+    fabricated.

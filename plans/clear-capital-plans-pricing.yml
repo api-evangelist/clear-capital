@@ -1,0 +1,57 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Clear Capital
+providerId: clear-capital
+created: '2026-06-21'
+modified: '2026-06-21'
+reconciled: false
+tags:
+- Real Estate
+- Property Data
+- Valuation
+- AVM
+- Appraisal
+- Mortgage
+- Plans
+description: >-
+  Clear Capital does not publish public, self-service pricing for its Property
+  Analytics API or Property Valuation API. Access is sales-led and negotiated
+  per commercial agreement, typically priced per valuation/order or by volume
+  for products such as ClearAVM, Rental AVM, comparables, BPO, CDA, Desktop and
+  Hybrid appraisals, and UDC. No per-unit rates are publicly documented, so this
+  artifact is not reconciled.
+notes: >-
+  Pricing is established directly with Clear Capital (contact sales at
+  sales@clearcapital.com or 530-550-2500). Per-product and volume rates should be
+  captured here on reconciliation once a commercial agreement or rate card is
+  available.
+sources:
+- https://www.clearcapital.com/products/property-analytics-api/
+- https://www.clearcapital.com/products/property-valuation-api/
+- https://docs.api.clearcapital.com/introduction
+plans:
+- id: clear-capital-commercial
+  name: Commercial Agreement
+  type: enterprise
+  description: >-
+    Sales-led access to Clear Capital's valuation and property data APIs under a
+    negotiated commercial agreement. Pricing is per valuation/order or by volume
+    and is not publicly published.
+  entries:
+  - label: Negotiated Agreement
+    name: commercial
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: us
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: Property Analytics API (ClearAVM, Rental AVM, Comparables, Property Data)
+  - name: Property Valuation API (Hybrid, Desktop, BPO, CDA, UDC ordering)
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

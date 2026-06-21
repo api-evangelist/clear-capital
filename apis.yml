@@ -1,0 +1,140 @@
+aid: clear-capital
+url: https://raw.githubusercontent.com/api-evangelist/clear-capital/refs/heads/main/apis.yml
+name: Clear Capital
+kind: company
+description: Clear Capital is a real-estate valuation and property data platform serving
+  mortgage lenders, investors, and capital markets. Its developer surface is exposed
+  through two sales-led REST products - the Property Analytics API (ClearAVM automated
+  valuations, comparables ranked by ClearRank, property characteristics, and market
+  trends) and the Property Valuation API (ordering and fulfillment of appraisal and
+  valuation products such as Hybrid/Desktop appraisal, BPO, CDA, and UDC). Access is
+  gated behind a commercial agreement; full reference docs live at docs.api.clearcapital.com.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Real Estate
+- Property Data
+- Valuation
+- AVM
+- Appraisal
+- Mortgage
+created: '2026-06-21'
+modified: '2026-06-21'
+specificationVersion: '0.19'
+apis:
+- aid: clear-capital:clearavm-valuation-api
+  name: Clear Capital ClearAVM / Valuation API
+  tags:
+  - AVM
+  - Valuation
+  - ClearAVM
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.clearcapital.com/analytics/clear-avm/
+  baseURL: https://api.clearcapital.com
+  properties:
+  - url: https://docs.api.clearcapital.com/introduction
+    type: Documentation
+  - url: https://www.clearcapital.com/analytics/clear-avm/
+    type: APIReference
+  - url: openapi/clear-capital-openapi.yml
+    type: OpenAPI
+  - url: collections/clear-capital.postman_collection.json
+    type: PostmanCollection
+  - url: collections/clear-capital.opencollection.json
+    type: OpenCollection
+  description: Lending-grade automated valuation model (ClearAVM) and Rental AVM delivered
+    over a RESTful interface, returning a point value estimate, value certainty, and
+    supporting analytics for a subject property. Interactive ClearAVM accepts property
+    condition as an input. Specific request and response schemas are documented behind
+    Clear Capital's gated developer portal and are not reproduced here.
+- aid: clear-capital:property-data-api
+  name: Clear Capital Property Data API
+  tags:
+  - Property Data
+  - Characteristics
+  - Market Trends
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.clearcapital.com/products/property-analytics-api/
+  baseURL: https://api.clearcapital.com
+  properties:
+  - url: https://docs.api.clearcapital.com/introduction
+    type: Documentation
+  - url: https://www.clearcapital.com/products/property-analytics-api/
+    type: APIReference
+  - url: openapi/clear-capital-openapi.yml
+    type: OpenAPI
+  - url: collections/clear-capital.postman_collection.json
+    type: PostmanCollection
+  - url: collections/clear-capital.opencollection.json
+    type: OpenCollection
+  description: Property characteristics (bedrooms, bathrooms, gross living area, photos),
+    home price index and historical trends, sales and listing history, and owner and
+    tax history, sourced from Clear Capital's property dataset covering nearly every
+    U.S. address and updated hourly. Delivered through the Property Analytics API.
+- aid: clear-capital:comps-api
+  name: Clear Capital Comparables (Comps) API
+  tags:
+  - Comparables
+  - Comps
+  - ClearRank
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.clearcapital.com/products/property-analytics-api/
+  baseURL: https://api.clearcapital.com
+  properties:
+  - url: https://docs.api.clearcapital.com/introduction
+    type: Documentation
+  - url: https://www.clearcapital.com/products/property-analytics-api/
+    type: APIReference
+  - url: openapi/clear-capital-openapi.yml
+    type: OpenAPI
+  - url: collections/clear-capital.postman_collection.json
+    type: PostmanCollection
+  - url: collections/clear-capital.opencollection.json
+    type: OpenCollection
+  description: Comparable sales and comparable rentals for a subject property, ranked
+    by Clear Capital's proprietary ClearRank algorithm, returned as part of a customizable
+    Property Analytics valuation report. Exact request and response schemas are documented
+    in the gated developer portal.
+- aid: clear-capital:appraisal-orders-api
+  name: Clear Capital Appraisal & Orders API
+  tags:
+  - Appraisal
+  - Orders
+  - Fulfillment
+  - BPO
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.clearcapital.com/products/property-valuation-api/
+  baseURL: https://api.clearcapital.com
+  properties:
+  - url: https://docs.api.clearcapital.com/introduction
+    type: Documentation
+  - url: https://www.clearcapital.com/products/property-valuation-api/
+    type: APIReference
+  - url: openapi/clear-capital-openapi.yml
+    type: OpenAPI
+  - url: collections/clear-capital.postman_collection.json
+    type: PostmanCollection
+  - url: collections/clear-capital.opencollection.json
+    type: OpenCollection
+  description: Ordering and fulfillment of Clear Capital valuation products via the
+    Property Valuation API - Hybrid Appraisal, Desktop Appraisal (GSE 1004 Desktop/70D),
+    Broker Price Opinion (BPO), Collateral Desktop Analysis (CDA), and Universal Data
+    Collection (UDC) - with real-time fulfillment milestone event notifications. Endpoint
+    paths and payloads are documented behind Clear Capital's gated developer portal.
+common:
+- type: GitHubOrganization
+  url: https://github.com/clearcapital
+- type: LinkedIn
+  url: https://www.linkedin.com/company/clear-capital
+- type: Website
+  url: https://www.clearcapital.com
+- type: Documentation
+  url: https://docs.api.clearcapital.com/introduction
+- type: Plans
+  url: plans/clear-capital-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/clear-capital-rate-limits.yml
+- type: FinOps
+  url: finops/clear-capital-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

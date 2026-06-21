@@ -1,0 +1,49 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Clear Capital API",
+    "version": "1.0",
+    "description": "Clear Capital's valuation and property data REST APIs are sales-led and gated. Exact endpoint paths and schemas are published behind the developer portal at docs.api.clearcapital.com and are not reproduced here to avoid fabrication. Folders below represent the documented product areas; populate requests once a credentialed reference is available."
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "ClearAVM / Valuation",
+        "type": "folder"
+      },
+      "docs": "Lending-grade ClearAVM and Rental AVM automated valuations via the Property Analytics API. Endpoint paths are documented in the gated developer portal.",
+      "items": []
+    },
+    {
+      "info": {
+        "name": "Property Data",
+        "type": "folder"
+      },
+      "docs": "Property characteristics, market trends, and sales/listing/owner/tax history via the Property Analytics API. Endpoint paths are documented in the gated developer portal.",
+      "items": []
+    },
+    {
+      "info": {
+        "name": "Comparables",
+        "type": "folder"
+      },
+      "docs": "Comparable sales and rentals ranked by ClearRank via the Property Analytics API. Endpoint paths are documented in the gated developer portal.",
+      "items": []
+    },
+    {
+      "info": {
+        "name": "Appraisal & Orders",
+        "type": "folder"
+      },
+      "docs": "Ordering and fulfillment of Hybrid/Desktop appraisal, BPO, CDA, and UDC via the Property Valuation API. Endpoint paths are documented in the gated developer portal.",
+      "items": []
+    }
+  ],
+  "bundled": true
+}

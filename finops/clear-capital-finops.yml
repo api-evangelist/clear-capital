@@ -1,0 +1,91 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Clear Capital
+providerId: clear-capital
+created: '2026-06-21'
+modified: '2026-06-21'
+reconciled: false
+tags:
+- Real Estate
+- Property Data
+- Valuation
+- AVM
+- Appraisal
+- Mortgage
+- FinOps
+- Cost Management
+- FOCUS
+description: >-
+  FinOps view of Clear Capital API spend. Clear Capital bills its valuation and
+  property data APIs under negotiated commercial agreements rather than public
+  self-service rates. Charges are typically per valuation/order or by committed
+  volume across products such as ClearAVM, Rental AVM, comparables, BPO, CDA,
+  Desktop/Hybrid appraisals, and UDC. Because no public rate card exists, the
+  meter rates here are structural placeholders and this artifact is not reconciled.
+notes: >-
+  Replace placeholder meters with contracted per-product rates and billing terms
+  once a Clear Capital commercial agreement or invoice schema is available.
+sources:
+- https://www.clearcapital.com/products/property-analytics-api/
+- https://www.clearcapital.com/products/property-valuation-api/
+- https://docs.api.clearcapital.com/introduction
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Clear Capital
+serviceCategory: Real Estate and Property Data
+billingModel:
+  pricingCategory: Committed-Use / Negotiated
+  billingFrequency: Monthly
+  billingCurrency: USD
+  chargeCategories:
+  - Usage
+  - Purchase
+focusColumns:
+  ServiceName: Clear Capital API
+  ServiceCategory: Real Estate and Property Data
+  ProviderName: Clear Capital
+  PublisherName: Clear Capital
+  InvoiceIssuerName: Clear Capital
+  BillingCurrency: USD
+  ChargeCategory: Usage
+  PricingCategory: Committed-Use / Negotiated
+meters:
+- name: avm_valuations
+  description: ClearAVM / Rental AVM valuations returned, typically billed per valuation. Rate not publicly documented.
+  unit: valuations
+  aggregation: sum
+  dimensions:
+  - account
+  - product
+- name: property_data_requests
+  description: Property data / characteristics / history requests via the Property Analytics API. Rate not publicly documented.
+  unit: requests
+  aggregation: sum
+  dimensions:
+  - account
+  - product
+- name: valuation_orders
+  description: Appraisal and valuation orders (Hybrid, Desktop, BPO, CDA, UDC) placed via the Property Valuation API. Rate not publicly documented.
+  unit: orders
+  aggregation: sum
+  dimensions:
+  - account
+  - product
+principles:
+- name: Visibility
+  description: Track per-product valuation and order counts against the negotiated agreement; request usage reporting from Clear Capital.
+- name: Allocation
+  description: Tag API credentials per workflow/loan-pipeline and map valuation/order spend to internal cost centers.
+- name: Optimization
+  description: Match product choice to need (e.g., ClearAVM for high-volume prequalification vs. full appraisal at underwriting) to control per-order cost.
+- name: Accountability
+  description: Assign owners per integration and review valuation/order volume monthly against contracted commitments.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
