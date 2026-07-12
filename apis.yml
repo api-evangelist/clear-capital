@@ -121,6 +121,12 @@ apis:
     Collection (UDC) - with real-time fulfillment milestone event notifications. Endpoint
     paths and payloads are documented behind Clear Capital's gated developer portal.
 common:
+- type: TrustCenter
+  url: security/clear-capital-trust-center.yml
+- type: DomainSecurity
+  url: security/clear-capital-domain-security.yml
+- type: Authentication
+  url: authentication/clear-capital-authentication.yml
 - type: GitHubOrganization
   url: https://github.com/clearcapital
 - type: LinkedIn

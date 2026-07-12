@@ -1,0 +1,12 @@
+generated: '2026-07-11'
+method: searched
+probe: true
+source: https://trust.clearcapital.com/
+url: https://trust.clearcapital.com/
+certifications:
+- SOC 2
+evidence:
+- source: https://trust.clearcapital.com/
+  keywords:
+  - soc 2
+  - trust center

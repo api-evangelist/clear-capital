@@ -1,0 +1,15 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/clear-capital-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: System-to-system authentication over encrypted transport, as described in Clear
+    Capital's product documentation. Exact token issuance and header details are documented
+    in the gated developer portal and are not reproduced here.
+  sources:
+  - openapi/clear-capital-openapi.yml
