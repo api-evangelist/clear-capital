@@ -1,0 +1,14 @@
+{
+  "provider": "clear-capital",
+  "sources": [
+    "clear-capital-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived clear-capital-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
