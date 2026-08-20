@@ -24,6 +24,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/clear-capital.png
 tags:
+- Real-Estate
+- Property Data
+- Valuation
+- AVM
+- Appraisal
+- Mortgage
+tags_raw:
 - Real Estate
 - Property Data
 - Valuation
@@ -110,6 +117,11 @@ apis:
 - aid: clear-capital:appraisal-orders-api
   name: Clear Capital Appraisal & Orders API
   tags:
+  - Appraisal
+  - Order
+  - Fulfillment
+  - BPO
+  tags_raw:
   - Appraisal
   - Orders
   - Fulfillment
