@@ -9,6 +9,17 @@ description: Clear Capital is a real-estate valuation and property data platform
   trends) and the Property Valuation API (ordering and fulfillment of appraisal and
   valuation products such as Hybrid/Desktop appraisal, BPO, CDA, and UDC). Access is
   gated behind a commercial agreement; full reference docs live at docs.api.clearcapital.com.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: self-serve
