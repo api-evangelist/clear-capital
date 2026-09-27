@@ -36,7 +36,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/clear-capital.png
 tags:
-- Real-Estate
+- Real Estate
 - Property Data
 - Valuation
 - AVM
@@ -49,6 +49,7 @@ tags_raw:
 - AVM
 - Appraisal
 - Mortgage
+- Real-Estate
 created: '2026-06-21'
 modified: '2026-06-21'
 specificationVersion: '0.23'
