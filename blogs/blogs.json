@@ -1,0 +1,21 @@
+{
+  "repo": "clear-capital",
+  "feeds": [
+    {
+      "source": "https://www.clearcapital.com/resources/newsroom/",
+      "feed_url": "https://www.clearcapital.com/resources/newsroom/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.clearcapital.com/feed/",
+      "feed_url": "https://www.clearcapital.com/feed/",
+      "title": "",
+      "saved": 2,
+      "method": "feed"
+    }
+  ],
+  "post_count": 2,
+  "fetched": "2026-10-10T13:15:00Z"
+}
