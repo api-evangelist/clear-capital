@@ -1,4 +1,4 @@
-# Clear Capital (clear-capital)
+# Clear Capital
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,120 +66,113 @@
 
 Clear Capital is a real-estate valuation and property data platform serving mortgage lenders, investors, and capital markets. Its developer surface is exposed through two sales-led REST products - the Property Analytics API (ClearAVM automated valuations, comparables ranked by ClearRank, property characteristics, and market trends) and the Property Valuation API (ordering and fulfillment of appraisal and valuation products such as Hybrid/Desktop appraisal, BPO, CDA, and UDC). Access is gated behind a commercial agreement; full reference docs live at docs.api.clearcapital.com.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/clear-capital/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/clear-capital/refs/heads/main/apis.yml)
+**Areas:** Real Estate · Property Data · Valuation · AVM · Appraisal · Mortgage
 
-## Tags
+## Clear Capital on APIs.io
 
-- Real Estate
-- Property Data
-- Valuation
-- AVM
-- Appraisal
-- Mortgage
+Everything profiled for Clear Capital is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/clear-capital/](https://apis.io/providers/clear-capital/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (4)
 
-- **Created:** 2026-06-21
-- **Modified:** 2026-06-21
+- [Clear Capital ClearAVM / Valuation API](https://apis.io/apis/clear-capital/clearavm-valuation-api/) — Lending-grade automated valuation model (ClearAVM) and Rental AVM delivered over a RESTful interface, returning a point value estimate, value certainty, and…
+- [Clear Capital Property Data API](https://apis.io/apis/clear-capital/property-data-api/) — Property characteristics (bedrooms, bathrooms, gross living area, photos), home price index and historical trends, sales and listing history, and owner and…
+- [Clear Capital Comparables (Comps) API](https://apis.io/apis/clear-capital/comps-api/) — Comparable sales and comparable rentals for a subject property, ranked by Clear Capital's proprietary ClearRank algorithm, returned as part of a…
+- [Clear Capital Appraisal & Orders API](https://apis.io/apis/clear-capital/appraisal-orders-api/) — Ordering and fulfillment of Clear Capital valuation products via the Property Valuation API - Hybrid Appraisal, Desktop Appraisal (GSE 1004 Desktop/70D),…
 
-## APIs
+### Published properties
 
-### Clear Capital ClearAVM / Valuation API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Lending-grade automated valuation model (ClearAVM) and Rental AVM delivered over a RESTful interface, returning a point value estimate, value certainty, and supporting analytics for a subject property. Interactive ClearAVM accepts property condition as an input. Specific request and response schemas are documented behind Clear Capital's gated developer portal and are not reproduced here.
+#### Collections (1)
 
-- **Human URL:** [https://www.clearcapital.com/analytics/clear-avm/](https://www.clearcapital.com/analytics/clear-avm/)
-- **Base URL:** `https://api.clearcapital.com`
+Postman and Open Collection request collections.
 
-#### Tags
+- [Clear Capital API](https://apis.io/collections/clear-capital/open-clear-capital/)
 
-- AVM
-- Valuation
-- ClearAVM
+#### Security (3)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://docs.api.clearcapital.com/introduction)
-- [API Reference](https://www.clearcapital.com/analytics/clear-avm/)
-- [OpenAPI](openapi/clear-capital-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/clear-capital.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/clear-capital.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Clear Capital Authentication](https://apis.io/security/clear-capital/clear-capital-authentication/)
+- [Clear Capital Domain Security](https://apis.io/security/clear-capital/clear-capital-domain-security/)
+- [Clear Capital Trust Center](https://apis.io/security/clear-capital/clear-capital-trust-center/)
 
-### Clear Capital Property Data API
+#### Plans and pricing (1)
 
-Property characteristics (bedrooms, bathrooms, gross living area, photos), home price index and historical trends, sales and listing history, and owner and tax history, sourced from Clear Capital's property dataset covering nearly every U.S. address and updated hourly. Delivered through the Property Analytics API.
+Published plans, tiers and prices.
 
-- **Human URL:** [https://www.clearcapital.com/products/property-analytics-api/](https://www.clearcapital.com/products/property-analytics-api/)
-- **Base URL:** `https://api.clearcapital.com`
+- [Clear Capital Plans Pricing](https://apis.io/plans/clear-capital/clear-capital-plans-pricing/)
 
-#### Tags
+#### Rate limits (1)
 
-- Property Data
-- Characteristics
-- Market Trends
+Published request limits.
 
-#### Properties
+- [Clear Capital Rate Limits](https://apis.io/rate-limits/clear-capital/clear-capital-rate-limits/)
 
-- [Documentation](https://docs.api.clearcapital.com/introduction)
-- [API Reference](https://www.clearcapital.com/products/property-analytics-api/)
-- [OpenAPI](openapi/clear-capital-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/clear-capital.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/clear-capital.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### FinOps (1)
 
-### Clear Capital Comparables (Comps) API
+What the API costs to run, by operation.
 
-Comparable sales and comparable rentals for a subject property, ranked by Clear Capital's proprietary ClearRank algorithm, returned as part of a customizable Property Analytics valuation report. Exact request and response schemas are documented in the gated developer portal.
+- [Clear Capital Finops](https://apis.io/finops/clear-capital/clear-capital-finops/)
 
-- **Human URL:** [https://www.clearcapital.com/products/property-analytics-api/](https://www.clearcapital.com/products/property-analytics-api/)
-- **Base URL:** `https://api.clearcapital.com`
+## Where to find this API
 
-#### Tags
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- Comparables
-- Comps
-- ClearRank
-
-#### Properties
-
-- [Documentation](https://docs.api.clearcapital.com/introduction)
-- [API Reference](https://www.clearcapital.com/products/property-analytics-api/)
-- [OpenAPI](openapi/clear-capital-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/clear-capital.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/clear-capital.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Clear Capital Appraisal & Orders API
-
-Ordering and fulfillment of Clear Capital valuation products via the Property Valuation API - Hybrid Appraisal, Desktop Appraisal (GSE 1004 Desktop/70D), Broker Price Opinion (BPO), Collateral Desktop Analysis (CDA), and Universal Data Collection (UDC) - with real-time fulfillment milestone event notifications. Endpoint paths and payloads are documented behind Clear Capital's gated developer portal.
-
-- **Human URL:** [https://www.clearcapital.com/products/property-valuation-api/](https://www.clearcapital.com/products/property-valuation-api/)
-- **Base URL:** `https://api.clearcapital.com`
-
-#### Tags
-
-- Appraisal
-- Orders
-- Fulfillment
-- BPO
-
-#### Properties
-
-- [Documentation](https://docs.api.clearcapital.com/introduction)
-- [API Reference](https://www.clearcapital.com/products/property-valuation-api/)
-- [OpenAPI](openapi/clear-capital-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/clear-capital.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/clear-capital.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [GitHub Organization](https://github.com/clearcapital)
-- [LinkedIn](https://www.linkedin.com/company/clear-capital)
 - [Website](https://www.clearcapital.com)
 - [Documentation](https://docs.api.clearcapital.com/introduction)
-- [Plans](plans/clear-capital-plans-pricing.yml)
-- [Rate Limits](rate-limits/clear-capital-rate-limits.yml)
-- [Fin Ops](finops/clear-capital-finops.yml)
+- [Blog](https://www.clearcapital.com/resources/newsroom/)
+- [GitHub](https://github.com/clearcapital)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 23.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 29.4 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 25.7 |
+| Access clarity | 13.2 |
+
+**Agent readiness 16.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/clear-capital/](https://apis.io/providers/clear-capital/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Clear Capital: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/clear-capital/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
